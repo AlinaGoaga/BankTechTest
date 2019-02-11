@@ -1,15 +1,12 @@
-describe("Managing account and statement printing", function() {
+describe("Managing financial resources and statement printing", function() {
 
   let account;
-  let dateDeposit1;
-  let dateDeposit2;
-  let dateWithdrawal;
 
   beforeEach(function() {
-    dateDeposit1 = "10/01/2012";
-    dateDeposit2 = "13/01/2012";
-    dateWithdrawal = "14/01/2012";
     account = new Account();
+    account.deposit("10/01/2012", 1000);
+    account.deposit("13/01/2012", 2000);
+    account.withdraw("14/01/2012", 500);
   })
 
   // As a user
@@ -18,16 +15,12 @@ describe("Managing account and statement printing", function() {
 
   describe("Manage financial resources", function() {
     it("allows the user to deposit and withdraw money from the account", function() {
-      account.deposit(dateDeposit1, 1000);
-      account.deposit(dateDeposit2, 2000);
-      account.withdraw(dateWithdrawal, 500);
       expect(account.list).toEqual({ "10/01/2012": 1000,
         "13/01/2012": 2000,
         "14/01/2012": -500
       })
     })
   })
-
 
   // As a user
   // So that I can see how my current financial situation looks like
