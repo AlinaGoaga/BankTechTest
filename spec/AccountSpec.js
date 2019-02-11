@@ -22,4 +22,12 @@ describe("Account", function() {
     })
   })
 
+  describe("Balance", function() {
+    it("allows the user to calculate the balance on the account", function() {
+      account.deposit("10/01/2012", 1000);
+      account.withdraw("14/01/2012", 500);
+      expect(account.calculateBalance()).toEqual([500,1000])
+    })
+  })
+
 })

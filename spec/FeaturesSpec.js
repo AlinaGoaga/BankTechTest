@@ -27,7 +27,27 @@ describe("Managing financial resources and statement printing", function() {
   })
 
   // As a user
+  // So that I can see how much money I have
+  // I want to be able to calculate my balance
+
+  describe("Calculate balance", function() {
+    it("allows the user calculate the balance on the account", function() {
+      expect(account.calculateBalance()).toEqual([2500,3000,1000])
+    })
+  })
+
+  // As a user
   // So that I can see how my current financial situation looks like
   // I want to be able to print my statement showing the date, amount and balance for each withdrawal or deposit.
+
+  // describe("Statement printing", function() {
+  //   it("allows the user print his statement", function() {
+  //     expect(statement.list).toEqual(
+  //      "date || credit || debit || balance" + "\n" +
+  //      "14/01/2012 || || 500.00 || 2500.00" + "\n" +
+  //      "13/01/2012 || 2000.00 || || 3000.00" + "\n" +
+  //      "10/01/2012 || 1000.00 || || 1000.00")
+  //   })
+  // })
 
 })
