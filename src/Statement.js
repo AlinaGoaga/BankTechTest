@@ -9,14 +9,12 @@ class Statement {
     let printed = "date || credit || debit || balance";
     for (var i = l-1; i >= 0 ; i--) {
       let date = this.account.list[i].date;
-      let amount = this.account.list[i].amount.toFixed(2);
+      let amount = this.account.list[i].amount;
       let balance = this.account.balance[i].toFixed(2);
       if (amount > 0) {
-        printed = printed + "\n" + `${date} || ${amount} || || ${balance}`;
+        printed += `\n${date} || ${amount.toFixed(2)} || || ${balance}`;
       } else {
-        amount = -(amount);
-        amount = amount.toFixed(2);
-        printed =  printed + "\n" + `${date} || || ${amount} || ${balance}`;
+        printed += `\n${date} || || ${(-amount).toFixed(2)} || ${balance}`;
       }
     }
     return printed;
