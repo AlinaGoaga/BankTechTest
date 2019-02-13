@@ -1,5 +1,4 @@
 class Account {
-  
   constructor () {
     this.list = []
     this.balance = []

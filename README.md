@@ -18,7 +18,7 @@
   I want to be able to print my statement showing the date, amount and balance for each withdrawal or deposit.
 ```
 
-Example: 
+### Example:
 
 **Given** a client makes a deposit of 1000 on 10-01-2012  
 **And** a deposit of 2000 on 13-01-2012  
@@ -35,10 +35,7 @@ date || credit || debit || balance
 
 ## How to use
 
-$ clone the repository
-$ cd into the repository
-$ open SpecRunner.html to see the tests
-$ open the console to interact with the application
-
-
-
+* clone the repository
+* cd into the repository
+* open SpecRunner.html to see the tests
+* open the console to interact with the application
