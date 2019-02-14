@@ -4,19 +4,20 @@ class Statement {
   }
 
   print () {
-    let list = this.account.list
-    let l = this.account.list.length
-    let printed = 'date || credit || debit || balance'
+    let l = this.account.list.length;
+    let statement = 'date || credit || debit || balance'
     for (var i = l - 1; i >= 0; i--) {
-      let date = list[i].date
-      let amount = list[i].amount
-      let balance = this.account.balance[i].toFixed(2)
-      if (amount > 0) {
-        printed += `\n${date} || ${amount.toFixed(2)} || || ${balance}`
-      } else {
-        printed += `\n${date} || || ${(-amount).toFixed(2)} || ${balance}`
-      }
+       statement += this.generateLine(i);
     }
-    return printed
+    return statement
+    }
+
+  generateLine (i) {
+    let date = this.account.list[i].date
+    let amount = this.account.list[i].amount
+    let balance = this.account.balance[i].toFixed(2)
+    return (amount > 0) ? `\n${date} || ${amount.toFixed(2)} || || ${balance}` :
+        `\n${date} || || ${(-amount).toFixed(2)} || ${balance}`;
   }
+
 }
