@@ -20,9 +20,9 @@ describe('Statement', function () {
   describe('generateLine', function () {
     it('generates the individual line for the statement', function () {
       expect(statement.generateLine(0)).toEqual(
-      '\n'+ '10/01/2012 || 1000.00 || || 1000.00')
+        '\n' + '10/01/2012 || 1000.00 || || 1000.00')
       expect(statement.generateLine(2)).toEqual(
-      '\n'+ '14/01/2012 || || 500.00 || 2500.00')
+        '\n' + '14/01/2012 || || 500.00 || 2500.00')
     })
   })
 })
