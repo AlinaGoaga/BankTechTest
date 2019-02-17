@@ -1,7 +1,7 @@
 describe('Statement', function () {
-  let account = { list: [ { date: '10/01/2012', amount: 1000 },
-    { date: '13/01/2012', amount: 2000 },
-    { date: '14/01/2012', amount: -500 } ],
+  let account = { list: [ { amount: 1000, date: '10/01/2012' },
+    { amount: 2000, date: '13/01/2012' },
+    { amount: -500, date: '14/01/2012' } ],
   balance: [1000, 3000, 2500]
   }
 

@@ -5,9 +5,9 @@ describe("Managing financial resources and statement printing", function() {
 
   beforeEach(function() {
     account = new Account();
-    account.deposit("10/01/2012", 1000);
-    account.deposit("13/01/2012", 2000);
-    account.withdraw("14/01/2012", 500);
+    account.deposit(1000, "10/01/2012");
+    account.deposit(2000, "13/01/2012");
+    account.withdraw(500, "14/01/2012");
     statement = new Statement(account);
   })
 
@@ -31,7 +31,7 @@ describe("Managing financial resources and statement printing", function() {
   // I want to be able to calculate my balance
 
   describe("Calculate balance", function() {
-    it("allows the user calculate the balance on the account", function() {
+    it("allows the user to calculate the balance on the account", function() {
       expect(account.calculateBalance()).toEqual([1000,3000,2500])
     })
   })

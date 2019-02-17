@@ -4,13 +4,13 @@ class Account {
     this.balance = []
   }
 
-  deposit (date = (new Date()).toLocaleDateString(), amount) {
-    this.list.push({ date: date, amount: amount })
+  deposit (amount, date = (new Date).toLocaleDateString()) {
+    this.list.push({ amount: amount, date: date })
     return this.list
   }
 
-  withdraw (date = (new Date()).toLocaleDateString(), amount) {
-    this.list.push({ date: date, amount: -amount })
+  withdraw (amount, date = (new Date).toLocaleDateString()) {
+    this.list.push({ amount: -amount, date: date })
     return this.list
   }
 

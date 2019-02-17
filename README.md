@@ -38,4 +38,4 @@ date || credit || debit || balance
 * clone the repository
 * cd into the repository
 * open SpecRunner.html to see the tests
-* open the console to interact with the application
+* on the same page, open the console to interact with the application
