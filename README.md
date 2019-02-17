@@ -40,4 +40,4 @@ date || credit || debit || balance
 * open SpecRunner.html to see the tests
 * on the same page, open the console to interact with the application
 
-[Interacting with the app](https://github.com/AlinaGoaga/BankTechTest/blob/master/images/console.jpeg)
+![Interacting with the app](https://github.com/AlinaGoaga/BankTechTest/blob/master/images/console.jpeg)
