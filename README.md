@@ -1,4 +1,4 @@
-# Bank tech test
+# Bank tech test [![BCH compliance](https://bettercodehub.com/edge/badge/AlinaGoaga/BankTechTest?branch=master)](https://bettercodehub.com/) <a href="https://codeclimate.com/github/AlinaGoaga/BankTechTest/maintainability"><img src="https://api.codeclimate.com/v1/badges/85f078e7180acb8d9798/maintainability" /></a>
 
 ## User stories
 
